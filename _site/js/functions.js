@@ -23,7 +23,7 @@ $('.js-openModal').click(function(event) {
   event.preventDefault();
   if ($(this).attr('data-id')) {
       var productId = $(this).data('id');
-      console.log(productId);
+      //console.log(productId);
   }
 
 
