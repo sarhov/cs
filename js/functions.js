@@ -5,7 +5,7 @@ $('#cd').countdown('2015/01/01', function(event) {
     + '<span>%S</span>'));
 });
 
- $('.tooltip').tooltipster({contentAsHTML: true,position:'top',positionTracker:true});
+ $('.tooltip').tooltipster({contentAsHTML: true,position:'top',positionTracker:true}); 
 
 modal()
 
