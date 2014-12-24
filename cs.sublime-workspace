@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"c",
+				"click	.click()"
+			],
+			[
+				"tr",
+				"transparent"
+			],
+			[
 				"caro",
 				"carousel"
 			],
@@ -296,21 +304,51 @@
 	"buffers":
 	[
 		{
-			"contents": "---\n---\n\n/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */\nhtml,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}\n\na:link    { color: black; }\na:visited { color: black; }\n\n/**\n * Clearfix\n */\n.clearfix {\n\n    &:after {\n        content: \"\";\n        display: table;\n        clear: both;\n    }\n}\n\n*, *:before, *:after {\n    box-sizing: border-box;\n  } \n\n\nbody{\n  background:#DCDCDC url('../img/bg.png') left top repeat;\n  font-family: 'Open Sans', sans-serif; \n  font-size: 16px;\n}\n\n.wrapper{\n  width: 100%;\n  &_clear{\n    clear: both;\n  }\n}\n\n.inner{\n  width: 100%;\n  max-width: 1200px;\n  padding:0 15px;\n  min-width: 1000px;\n  margin: auto;\n  overflow: hidden;\n  &_head-block{\n    position: relative;\n    text-align: center;\n    overflow: visible;\n  }\n}\n\n.main-header{\n  margin-bottom: 20px;\n}\n\n.navigation{\n  float: right;\n  min-height: 70px;\n  padding-top: 15px;\n  &__item{\n    float: left;\n    margin-left: 10px;\n  }\n  &__link{\n    display: block;\n    background:#fff;\n    font-weight: 800;\n    text-transform: uppercase;\n    box-shadow: 0 1px 3px #CCC;\n    border-radius: 3px;\n    padding: 9px 10px;\n    text-decoration: none;\n    line-height: 1;\n    font-size: 17px;\n    &:hover{\n      box-shadow: none;\n    }\n  }\n}\n\n.site-logo{\n  clear: right;\n  float: left;\n  width: 343px;\n  height: 177px;\n  margin-top: -10px;\n  margin-left: -8px;\n  &__link{\n    display: block;\n    width: 100%;\n    height: 100%;\n    background:transparent url('../img/logo.png') left center no-repeat;\n    &:hover{\n      opacity: 0.9;\n    }\n  }\n}\n\n.site-title{\n  float: right;\n  clear: right;\n  text-align: right;\n  width: 343px;\n  margin-bottom: 23px;\n  background:#fff;\n  padding: 7px 10px;\n  line-height: 1;\n  overflow: hidden;\n  border-radius: 4px;\n  box-shadow: 0 1px 3px #ccc;\n  &__headline{\n    font-size: 35px;\n    font-weight: 800;\n    text-transform: uppercase;\n    margin-bottom: 5px;\n  }\n  &__description{\n    font-weight: 600;\n    line-height: 1.3;\n  }\n}\n\n.info-block{\n  clear: right;\n  padding: 13px 10px;\n  font-size: 20px;\n  color: #fff;\n  text-shadow: 1px 0 2px #444;\n  border-radius: 4px;\n  text-transform: uppercase;\n  font-weight: 800;\n  background:#d97a7a;\n  float: right;\n}\n\n.head-block{\nbackground: #4e8891;\nbackground: -moz-linear-gradient(top,  #4e8891 0%, #437480 100%);\nbackground: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4e8891), color-stop(100%,#437480));\nbackground: -webkit-linear-gradient(top,  #4e8891 0%,#437480 100%);\nbackground: -o-linear-gradient(top,  #4e8891 0%,#437480 100%);\nbackground: -ms-linear-gradient(top,  #4e8891 0%,#437480 100%);\nbackground: linear-gradient(to bottom,  #4e8891 0%,#437480 100%);\nfilter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4e8891', endColorstr='#437480',GradientType=0 );\n  padding: 17px 0;\n  position: relative;\n  margin-bottom: 30px;\n  &::after, &::before{\n    content: '';\n    background:transparent url('../img/line-bg.png') left center repeat-x;\n    position: absolute;\n    left: 0;\n    width: 100%;\n    height: 5px;\n    top:2px;\n    opacity: 0.7;\n  }\n  &::after{\n    top: auto;\n    bottom: 2px;\n  }\n  &__text{\n  position: relative;\n    text-transform: uppercase;\n    font-weight: 800;\n    text-align: center;\n    color: #fff;\n    font-size: 20px;\n  }\n  @at-root & .head-block_bottom{\n    \n  }\n}\n\n.get-coupon-button{\n  position: absolute;\n  left: 15px;\n  top: -5px;\n  padding: 5px 6px;\n  padding-left: 26px;\n  float: left;\n  height: 30px;\n  vertical-align: middle;\n  background:#45668e url('../img/vk-logo.png') 5px 5px no-repeat;\n  text-decoration: none;\n  border: 1px solid #2f545a;\n  &__text{\n    color: #fff;\n      font-size: 15px;\n    &:before{\n      content: ' |'; \n      display: inline-block;\n      position: relative;\n      top: -1px;\n    }\n  }\n  &:hover{\n    opacity: 0.9;\n  }\n}\n\n.timer{\n  text-align: center;\n  &_wrapper{\n    margin-bottom: 30px;\n  }\n  &__headline{\n    font-weight: 300;\n    line-height: 1.4;\n    margin-bottom: 15px;\n  }\n}\n\n.act {\n    color: #000000;\n    position: relative;\n    top: 20px;\n}\n#cd span {\n    background-color: #d97a7a;\n    border-radius: 3px;\n    color: #ffffff;\n    font-size: 23px;\n    font-weight: 800;\n    padding-top: 12px;\n    text-align: center;\n    width: 46px;\n    height: 47px;\n    display: inline-block;\n    text-shadow: 1px 0 3px #444;\n    // line-height: 46px;\n}\n#cd .sep {\n    background: none repeat scroll 0 0 rgba(255, 255, 255, 0);\n    color: #333333;\n    font-size: 100%;\n    font-weight: bold;\n    margin-left: 10px;\n    margin-right: 10px;\n    padding: 10px 0;\n    width: 10px;\n    position: relative;\n    text-shadow: none;\n    top:-5px\n}\n\n.products{\n  margin:0 -5.5%;\n}\n\n.product{\n    height: 340px;\n    width: 23.333%;\n    // background:#444;\n    margin-bottom: 10px;\n    float: left;\n    padding-top: 35px;\n    position: relative;\n    margin:0  5% 50px 5%;\n    &__discount{\n      position: absolute;\n      left: 15px;\n      top: 3px;\n      color: #fff;\n      text-transform: uppercase;\n      background: #d97a7a;\n      text-shadow: 1px 0 2px #444;\n      font-weight: 800;\n      padding: 6px;\n      border-radius: 6px;\n      z-index: 2;\n      font-size: 14px;\n      &:before {\n  content: '';\n  border-style: solid;\n  border-width: 24px 10px;\n  border-color: transparent #D97A7A transparent  transparent;\n  transform: rotate(-40deg);\n  display: block;\n  position: absolute;\n  bottom: -23px;\n  z-index: -1;\n  right: 16px;\n}\n    }\n    &__image{\n      position: relative;\n      margin: 0 0 5px 0;\n      width: 100%;\n      height: 160px;\n      img{\n        position: absolute;\n        right: 0;\n        left: 0;\n        top: 0;\n        bottom:0;\n        margin: auto;\n        max-width: 100%;\n        height: auto;\n        max-height: 100%;\n      }\n    }\n    &__buy{\n      width: 80%;\n      margin:0 auto 10px auto;\n      background:#626262;\n      text-decoration: none;\n      color: #fff !important;\n      text-shadow: 1px 0 3px #444;\n      text-transform: uppercase;\n      font-size: 22px;\n      display: block;\n      border-radius: 4px;\n      padding: 9px 2px;\n      text-align: center;\n      font-weight: 800;\n      &:hover{\n        opacity: 0.9;\n      }\n    }\n    &__info{\n      padding: 4px 5px 7px 5px;\n      font-weight: bold;\n      color: #fff;\n      background:#46777f;\n      text-align: center;\n      width: 80%;\n      margin: auto;\n      border-radius: 4px;\n      text-transform: uppercase;\n      font-size: 14px;\n    }\n    &__title{\n      margin-bottom: 4px;\n      line-height: 1.2;\n      padding: 0 10px;\n    }\n    &__price{\n      font-size: 16px;\n    }\n  }\n",
-			"file": "css/main.scss",
-			"file_size": 7201,
-			"file_write_time": 130638891004099499,
+			"file": "_layouts/layout.html",
 			"settings":
 			{
-				"buffer_size": 7243,
+				"buffer_size": 5420,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "_layouts/layout.html",
+			"file": "buyform.html",
 			"settings":
 			{
-				"buffer_size": 4032,
+				"buffer_size": 1305,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/functions.js",
+			"settings":
+			{
+				"buffer_size": 877,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "css/main.scss",
+			"settings":
+			{
+				"buffer_size": 22155,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "rules.html",
+			"settings":
+			{
+				"buffer_size": 1449,
+				"line_ending": "Windows",
+				"name": "hello"
+			}
+		},
+		{
+			"file": "js/countdown.js",
+			"settings":
+			{
+				"buffer_size": 5782,
 				"line_ending": "Unix"
 			}
 		},
@@ -318,7 +356,7 @@
 			"file": "_includes/head.html",
 			"settings":
 			{
-				"buffer_size": 787,
+				"buffer_size": 467,
 				"line_ending": "Unix"
 			}
 		},
@@ -326,7 +364,7 @@
 			"file": "_data/navigation.yml",
 			"settings":
 			{
-				"buffer_size": 194,
+				"buffer_size": 219,
 				"line_ending": "Windows"
 			}
 		},
@@ -334,7 +372,15 @@
 			"file": "_config.yml",
 			"settings":
 			{
-				"buffer_size": 545,
+				"buffer_size": 537,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": ".gitignore",
+			"settings":
+			{
+				"buffer_size": 13,
 				"line_ending": "Unix"
 			}
 		}
@@ -858,7 +904,7 @@
 				"Git: Commit"
 			]
 		],
-		"width": 512.0
+		"width": 464.0
 	},
 	"console":
 	{
@@ -882,13 +928,10 @@
 	[
 		"/C/Users/sarhov/Dropbox/Projects/cs",
 		"/C/Users/sarhov/Dropbox/Projects/cs/_data",
-		"/C/Users/sarhov/Dropbox/Projects/cs/_posts",
 		"/C/Users/sarhov/Dropbox/Projects/cs/_sass",
 		"/C/Users/sarhov/Dropbox/Projects/cs/_site",
-		"/C/Users/sarhov/Dropbox/Projects/cs/_site/css",
-		"/C/Users/sarhov/Dropbox/Projects/cs/_site/img",
-		"/C/Users/sarhov/Dropbox/Projects/cs/css",
-		"/C/Users/sarhov/Dropbox/Projects/cs/img"
+		"/C/Users/sarhov/Dropbox/Projects/cs/img",
+		"/C/Users/sarhov/Dropbox/Projects/cs/js"
 	],
 	"file_history":
 	[
@@ -1040,6 +1083,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"18",
 			"div",
 			"9",
 			"project",
@@ -1166,8 +1210,7 @@
 			"&gt;",
 			"350pc",
 			"images",
-			"transform",
-			"0.3"
+			"transform"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1189,113 +1232,24 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "css/main.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 7243,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3997,
-								3997
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content"
-							],
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1628.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
 					"file": "_layouts/layout.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4032,
+						"buffer_size": 5420,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3286,
-								3286
+								5326,
+								5326
 							]
 						],
 						"settings":
@@ -1364,27 +1318,27 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1053.0,
+						"translation.y": 2060.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "_includes/head.html",
+					"buffer": 1,
+					"file": "buyform.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 787,
+						"buffer_size": 1305,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								452,
-								452
+								205,
+								205
 							]
 						],
 						"settings":
@@ -1460,20 +1414,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "_data/navigation.yml",
+					"buffer": 2,
+					"file": "js/functions.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 194,
+						"buffer_size": 877,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								178,
-								178
+								796,
+								796
 							]
 						],
 						"settings":
@@ -1537,30 +1491,30 @@
 								"bh_square_close",
 								"bh_square_content"
 							],
-							"syntax": "Packages/YAML/YAML.tmLanguage"
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "_config.yml",
+					"buffer": 3,
+					"file": "css/main.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 545,
+						"buffer_size": 22155,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								544,
-								544
+								22136,
+								22136
 							]
 						],
 						"settings":
@@ -1624,13 +1578,542 @@
 								"bh_square_close",
 								"bh_square_content"
 							],
-							"syntax": "Packages/YAML/YAML.tmLanguage"
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 5796.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "rules.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1449,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								268,
+								327
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_name": "hello",
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"syntax": "Packages/Jekyll/Syntaxes/HTML (Jekyll).tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "js/countdown.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5782,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3304,
+								3304
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "_includes/head.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 467,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								166,
+								166
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"syntax": "Packages/Jekyll/Syntaxes/HTML (Jekyll).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "_data/navigation.yml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 219,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								218,
+								218
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"syntax": "Packages/YAML/YAML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "_config.yml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 537,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								339,
+								339
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"syntax": "Packages/YAML/YAML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": ".gitignore",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 13,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
 					"type": "text"
 				}
 			]
@@ -1699,6 +2182,10 @@
 		"selected_items":
 		[
 			[
+				"main",
+				"css\\main.scss"
+			],
+			[
 				"lya",
 				"templates\\layouts.layout.liquid"
 			],
@@ -1717,10 +2204,6 @@
 			[
 				"head",
 				"website\\_includes\\head.html"
-			],
-			[
-				"main",
-				"website\\css\\main.css"
 			],
 			[
 				"cnma",
@@ -2054,6 +2537,10 @@
 		"height": 500.0,
 		"selected_items":
 		[
+			[
+				"yasmin",
+				"C:\\Users\\sarhov\\Dropbox\\Projects\\yasmin\\yasmin.sublime-project"
+			],
 			[
 				"vn",
 				"C:\\Users\\sarhov\\Dropbox\\Projects\\VN_Saite\\vn_saite.sublime-project"

@@ -3,14 +3,14 @@
 
 {% include head.html %}
 
-<body>
+<body class="">
 
   <header class="main-header wrapper">
     <div class="inner clearfix">
       <ul class="navigation navigation_top clearfix">
         {% for nav in site.data.navigation %}
         <li class="navigation__item">
-          <a href="{% unless forloop.first %}#{% endunless %}{{nav.url}}" class="navigation__link">{{nav.title}}</a>
+          <a href="{{nav.url}}" class="navigation__link js-openModal">{{nav.title}}</a>
         </li>
         <!-- /.naviation__item -->
         {% endfor %}
@@ -93,7 +93,7 @@
         <figure class="product__image">
           <img src="{{site.baseurl}}img/product.png" alt="">
         </figure>
-        <a href="#" class="product__buy">
+        <a href="buyform.html" class="product__buy js-openModal">
           получить
         </a>
         <!-- product__buy -->
@@ -180,42 +180,7 @@
      X
    </span>
    <div class="modal-content">
-     <section class="wrapper  head-block">
-    <!-- get-coupon-button -->
-    <div class="inner_head-block">
 
-      <span class="head-block__text">
-       КУПИТЬ СЛУЧАЙНЫЙ ПРЕДМЕТ ОРУЖИЕ ИЗ OPERATION BRAVO
-     </span>
-   </div>
-   <!-- inner, head-block__text -->
-
- </section>
- <!-- wrapper_head-block -->
-
-
-  
-  <form action="" class="buyform">
-       <div class="buyform__line buyform__line_url">
-         <label for="url" class="buyform__label">Ваша ссылка обмена (Как её получить - в разделе Помощь):</label>
-         <input type="url" class="buyform__input">
-       </div>
-       <!-- buyform__line -->
-       <div class="buyform__line">
-         <label for="url" class="buyform__label">Ваш E-Mail:</label>
-         <input type="email" class="buyform__input">
-       </div>
-       <!-- buyform__line -->
-       <small class="buyform__rules">
-         Покупая предмет, вы соглашаетесь с правилами работы сервиса и у вас открыт инвентарь.
-       </small>
-       <div class="buyform__actions clearfix">
-         <a href="#" class="button buyform__button buyform__button_submit">да, я согласен, оплатить!</a>
-         <a href="#" class="button buyform__button buyform__button_cancel">закрыть</a>
-       </div>
-       <!-- /.buyform__actions clearfix -->
-     </form>
-     <!-- buyform -->
 </div>
 <!-- /.modal-content -->
 
@@ -229,17 +194,10 @@
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
   </script>
   <script src="{{site.baseurl}}js/countdown.js"></script>
-
-    <script>
-            // $('.tooltip').tooltipster({contentAsHTML: true,position:'top',positionTracker:true});
-            $('#cd').countdown('2015/01/01', function(event) {
-              $(this).html(event.strftime(''
-                  + '<span>%H</span><span class="sep"> : </span>'
-                  + '<span>%M</span><span class="sep"> : </span>'
-                  + '<span>%S</span>'));
-          });
+  <script src="{{site.baseurl}}js/functions.js">   </script>
+          
   
-      </script>
+   
 </body>
 
 </html>
