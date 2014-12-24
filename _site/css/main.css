@@ -467,6 +467,7 @@ body {
   margin-top: 15px; }
 
 .modal {
+  display: none;
   width: 660px;
   text-align: center;
   padding: 40px 0 15px 0;
