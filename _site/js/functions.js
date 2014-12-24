@@ -12,6 +12,7 @@ modal()
 function modal(){
 
   $('.js-closeModal').click(function(event) {
+
   event.preventDefault();
   $('.modal').fadeOut();
   $('body').removeClass('modal-active')
@@ -22,7 +23,7 @@ $('.js-openModal').click(function(event) {
   event.preventDefault();
 
   var content  = $(this).attr('href');
-  console.log(content)
+  if ($(this).hasClass('js-openModal')) { 
 
   $.get(content , function() {
   $('.modal-content').addClass('loading')
@@ -34,6 +35,9 @@ $('.js-openModal').click(function(event) {
     $('.modal-content').removeClass('loading');
     modal();  
 })
+  };
+  //console.log(content)
+
 
   //$('body').addClass('modal-active');
   //$('.modal').fadeIn();

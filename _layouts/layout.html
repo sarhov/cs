@@ -10,7 +10,7 @@
       <ul class="navigation navigation_top clearfix">
         {% for nav in site.data.navigation %}
         <li class="navigation__item">
-          <a href="{{nav.url}}" class="navigation__link js-openModal">{{nav.title}}</a>
+          <a href="{{nav.url}}" class="navigation__link {% unless nav.url contains 'http' %} js-openModal {% endunless %}">{{nav.title}}</a>
         </li>
         <!-- /.naviation__item -->
         {% endfor %}
